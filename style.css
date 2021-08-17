@@ -7,7 +7,7 @@
 }
 body {
    
-    background-color: #111111;
+    background: linear-gradient(#111111, #2a2d42);
     font-family: "Orbitron", sans-serif;
     text-transform: uppercase;
     transition: background ease 0.30s;
@@ -49,7 +49,7 @@ header {
   width: auto;
   height: auto;
   background-color: #0c0c0c;
-  box-shadow: 25px 20px 0px #000000;
+  box-shadow: 25px 20px 0px #00000062;
   border: 1px solid #000000;
   border-radius: 1rem;
   flex-flow: row;
@@ -94,7 +94,6 @@ p {
         transform: rotate( 50deg);
     }
 }
-
 body.light-mode {
     background: linear-gradient(rgb(253, 150, 91), rgb(255, 255, 121)), url(images/sun.png) no-repeat top left;
     background-size: 100%;
