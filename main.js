@@ -1,5 +1,3 @@
-setInterval(showTime, 1000);
-
 var clock = document.querySelector(".clock-container");
 var hourBox = document.querySelector(".hours");
 var minutesBox = document.querySelector(".minutes");
@@ -37,7 +35,8 @@ function showTime() {
 	var paragraph = document.querySelectorAll("p");
 	var clockBox = document.querySelectorAll(".clock-box");
 	var icon = document.querySelector("#icon");
-	if (format === "AM") {
+
+	if (hour <= 3) {
 		document.body.classList.add("light-mode");
 		formatBox.classList.add("light-mode");
 		headerLight.classList.add("light-mode");
@@ -47,8 +46,16 @@ function showTime() {
 		paragraph.forEach((p) => p.classList.add("light-mode"));
         icon.src = "images/sun.png";
         icon.classList.add('light-mode');
-	} else {
+	} else if( hour >= 4) {
 		document.body.classList.remove("light-mode");
+        document.body.classList.remove("light-mode");
+		formatBox.classList.remove("light-mode");
+		headerLight.classList.remove("light-mode");
+		clock.classList.remove("light-mode");
+		clockBox.forEach((c) => c.classList.remove("light-mode"));
+		divider.forEach((i) => i.classList.remove("light-mode"));
+		paragraph.forEach((p) => p.classList.remove("light-mode"));
+		icon.classList.remove("light-mode");
         icon.src = "images/moon.png";
 	}
 
@@ -61,3 +68,5 @@ function updateTime(t) {
 		return t;
 	}
 }
+
+setInterval(showTime, 1000);
