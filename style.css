@@ -16,6 +16,7 @@ body {
 header {
     text-align: center;
     padding: 10em;
+    opacity: 0.8;
 }
 .icon-container {
     position: absolute;
