@@ -6,22 +6,42 @@
   color: #ffff;
 }
 body {
+   
     background-color: #111111;
     font-family: "Orbitron", sans-serif;
     text-transform: uppercase;
+    transition: background ease 0.30s;
+    position: relative;
 }
 header {
     text-align: center;
     padding: 10em;
 }
+.icon-container {
+    position: absolute;
+    opacity: 0.2;
+    
+}
+#icon {
+    animation: rotate ease 2s;
+    transform: rotate( 0deg);
+}
+@keyframes rotate {
+    0% {
+        transform: rotate( 50deg);
+    }
+    100% {
+        transform: rotate( 0deg);
+    }
+}
  .container, .clock-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
 }
 .container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   flex-flow: center;
 }
 .clock-container {
@@ -29,7 +49,8 @@ header {
   width: auto;
   height: auto;
   background-color: #0c0c0c;
-  box-shadow: 15px 15px 15px #000000;
+  box-shadow: 25px 20px 0px #000000;
+  border: 1px solid #000000;
   border-radius: 1rem;
   flex-flow: row;
 }
@@ -58,4 +79,35 @@ header {
 p {
   text-align: center;
   padding-top: 1.50em;
+}
+
+/* LIGHT MODE */
+#icon.light-mode {
+    animation: rotate-sun ease 2s;
+    transform: rotate( 50deg);
+}
+@keyframes rotate-sun {
+    0% {
+        transform: rotate( 0deg);
+    }
+    100% {
+        transform: rotate( 50deg);
+    }
+}
+
+body.light-mode {
+    background: linear-gradient(rgb(253, 150, 91), rgb(255, 255, 121)), url(images/sun.png) no-repeat top left;
+    background-size: 100%;
+    transition: background ease 1s;
+}
+.format-box.light-mode, h1.light-mode, .clock-divider.light-mode, p.light-mode {
+    color: #000000;
+}
+.clock-container.light-mode {
+    background-color: #ffff;
+    box-shadow: 25px 20px 0px #4d3b003a;
+    border: 1px solid #BEBEBE;
+}
+.clock-box.light-mode {
+    border: 2px solid #000000;
 }
