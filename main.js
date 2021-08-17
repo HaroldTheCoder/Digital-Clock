@@ -36,7 +36,7 @@ function showTime() {
 	var clockBox = document.querySelectorAll(".clock-box");
 	var icon = document.querySelector("#icon");
 
-	if (hour <= 3) {
+	if (hour <= 6) {
 		document.body.classList.add("light-mode");
 		formatBox.classList.add("light-mode");
 		headerLight.classList.add("light-mode");
@@ -46,7 +46,7 @@ function showTime() {
 		paragraph.forEach((p) => p.classList.add("light-mode"));
         icon.src = "images/sun.png";
         icon.classList.add('light-mode');
-	} else if( hour >= 4) {
+	} else if( hour >= 7) {
 		document.body.classList.remove("light-mode");
         document.body.classList.remove("light-mode");
 		formatBox.classList.remove("light-mode");
