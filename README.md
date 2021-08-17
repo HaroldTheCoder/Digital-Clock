@@ -1,3 +1,3 @@
 # Digital-Clock
 
-Digital clock for practice with Auto-Theme change when clock is in AM or PM.
+Digital clock  with Auto-Theme change when clock is in AM or PM. For practice.
