@@ -127,7 +127,7 @@ body.light-mode {
     border: 2px solid #000000;
 }
 
-@media screen and (max-width: 400px ) {
+@media screen and (max-width: 500px ) {
   .icon-container {
     top: -10%;
     left: -25%;
