@@ -129,8 +129,8 @@ body.light-mode {
 
 @media screen and (max-width: 400px ) {
   .icon-container {
-    top: -12%;
-    left: -28%;
+    top: -10%;
+    left: -25%;
     transform: scale(0.20);
   }
   .container {
@@ -143,6 +143,21 @@ body.light-mode {
   align-items: center;
   flex-flow: column;
   padding: 5em 3em 5em;
+}
+  header {
+    padding: 0 0 5em 0;
+  }
+}
+@media screen and (min-width: 401px ) and (max-width: 950px ) {
+   .container {
+    transform: scale(0.70);
+    margin-top: -6%;
+    height: 103vh;
+  }
+.clock-container {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
   header {
     padding: 0 0 5em 0;
