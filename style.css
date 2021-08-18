@@ -130,7 +130,7 @@ body.light-mode {
 @media screen and (max-width: 400px ) {
   .icon-container {
     top: -10%;
-    left: -25%;
+    left: -30%;
     transform: scale(0.20);
   }
   .container {
