@@ -129,10 +129,10 @@ body.light-mode {
 
 @media screen and (max-width: 400px ) {
   .icon-container {
-    left: -5%;
+    left: -7%;
   }
   .container {
-    transform: scale(0.50);
+    transform: scale(0.55);
     height: 101vh;
   }
 .clock-container {
@@ -142,6 +142,6 @@ body.light-mode {
   padding: 5em 3em 5em;
 }
   header {
-    padding: 5em 0 5em 0;
+    padding: 0 0 5em 0;
   }
 }
