@@ -44,7 +44,7 @@ function showTime() {
 	var clockBox = document.querySelectorAll(".clock-box");
 	var icon = document.querySelector("#icon");
 
-	if (hour > 7 && format === "AM") {
+	if (hour > 6 && format === "AM") {
 		document.body.classList.add("light-mode");
 		formatBox.classList.add("light-mode");
 		headerLight.classList.add("light-mode");
