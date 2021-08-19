@@ -19,7 +19,7 @@ function showTime() {
 	var sec = d.getSeconds();
 	var format = "AM";
 
-	if (hour > 12) {
+	if (hour >= 12) {
 		hour -= 12;
 		format = "PM";
 	} else if (hour === 12) {
